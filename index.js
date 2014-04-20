@@ -30,19 +30,19 @@ module.exports = function (options) {
       params = [],
       call = [];
     if (options.$ !== false) {
-      params.push("$");
+      params.push(typeof options.$ === "string" ? options.$ : "$");
       call.push("jQuery");
     }
     if (options.window) {
-      params.push("window");
+      params.push(typeof options.window === "string" ? options.window : "window");
       call.push("window");
     }
     if (options.document) {
-      params.push("document");
+      params.push(typeof options.document === "string" ? options.document : "document");
       call.push("document");
     }
     if (options.undefined) {
-      params.push("undefined");
+      params.push(typeof options.undefined === "string" ? options.undefined : "undefined");
     }
     newFile = new File({
       cwd: file.cwd,

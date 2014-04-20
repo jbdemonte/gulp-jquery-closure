@@ -16,7 +16,7 @@ describe("gulp-jquery-closure", function() {
     test({newLine: newLine, document: true}, ";(function ($, document) {" + content + "})(jQuery, document);");
     test({newLine: newLine, undefined: true}, ";(function ($, undefined) {" + content + "})(jQuery);");
     test({newLine: newLine, window: true, document: true, undefined: true}, ";(function ($, window, document, undefined) {" + content + "})(jQuery, window, document);");
-
+    test({newLine: newLine, $: "jq", window: "w", document: "d", undefined: "undef"}, ";(function (jq, w, d, undef) {" + content + "})(jQuery, window, document);");
 
     function test(options, result) {
       var stream = jqc(options);
