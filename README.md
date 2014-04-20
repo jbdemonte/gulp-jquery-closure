@@ -36,7 +36,7 @@ gulp.task('scripts', function() {
 
 This will enclose the content defining some variable ($, window, document and undefined) depending on options as describe in jQuery plugin [boilerplate](https://github.com/jquery-boilerplate/jquery-boilerplate/blob/master/src/jquery.boilerplate.js).
 
-Result examples:
+Examples:
 
 options: none
 ```
@@ -45,7 +45,7 @@ options: none
   })(jQuery);
 ```
 
-options: {$, window: true, document: true, undefined: "undef"}
+options: {window: true, document: true, undefined: "undef"}
 ```
 ;(function ($, window, document, undef) {
   /* content */
