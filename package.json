@@ -1,7 +1,7 @@
 {
   "name": "gulp-jquery-closure",
   "description": "Enclose the content with jQuery definition and more",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/jbdemonte/gulp-jquery-closure",
   "repository": {
     "type": "git",
