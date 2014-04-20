@@ -36,12 +36,62 @@ gulp.task('scripts', function() {
 
 This will enclose the content defining some variable ($, window, document and undefined) depending on options as describe in jQuery plugin [boilerplate](https://github.com/jquery-boilerplate/jquery-boilerplate/blob/master/src/jquery.boilerplate.js).
 
+Result examples:
+
+options: none
+```
+;(function ($) {
+  /* content */
+  })(jQuery);
+```
+
+options: {$, window: true, document: true, undefined: "undef"}
+```
+;(function ($, window, document, undef) {
+  /* content */
+})(jQuery, window, document);
+```
+
 ### Options
-  - $: define $ for jQuery
-  - window : define window (current window)
-  - document : define document (current document)
-  - undefined : define undefined from real undefined value
-  - newLine : newLine separator
+All parameters are optionals.
+<table>
+<tr>
+  <th>Parameter</th>
+  <th>Type</th>
+  <th>Default</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>$</td>
+  <td>bool|string</td>
+  <td>true</td>
+  <td>define $ for jQuery</td>
+</tr>
+<tr>
+  <td>window</td>
+  <td>bool|string</td>
+  <td>false</td>
+  <td>define window (current window)</td>
+</tr>
+<tr>
+  <td>document</td>
+  <td>bool|string</td>
+  <td>false</td>
+  <td>define document (current document)</td>
+</tr>
+<tr>
+  <td>undefined</td>
+  <td>bool|string</td>
+  <td>false</td>
+  <td>define undefined from real undefined value</td>
+</tr>
+<tr>
+  <td>newLine</td>
+  <td>string</td>
+  <td>\n</td>
+  <td>newLine separator</td>
+</tr>
+</table>
 
 
 ## LICENSE
