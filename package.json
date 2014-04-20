@@ -1,0 +1,34 @@
+{
+  "name": "gulp-jquery-closure",
+  "description": "Enclose the content with jQuery definition and more",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jbdemonte/gulp-jquery-closure",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbdemonte/gulp-jquery-closure.git"
+  },
+  "author": {
+    "name": "Jean-Baptiste DEMONTE",
+    "email": "jbdemonte@gmail.com",
+    "url": "http://jb.demonte.fr"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "through": "^2.3.4",
+    "gulp-util": "^2.2.5"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "licenses": ""
+}
