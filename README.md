@@ -34,7 +34,7 @@ gulp.task('scripts', function() {
 });
 ```
 
-This will enclose the content defining some variable ($, window, document and undefined) depending on options as describe in jQuery plugin [https://github.com/jquery-boilerplate/jquery-boilerplate/blob/master/src/jquery.boilerplate.js](boilerplate).
+This will enclose the content defining some variable ($, window, document and undefined) depending on options as describe in jQuery plugin [boilerplate](https://github.com/jquery-boilerplate/jquery-boilerplate/blob/master/src/jquery.boilerplate.js).
 
 ### Options
   - $: define $ for jQuery
