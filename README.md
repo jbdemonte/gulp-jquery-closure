@@ -1,20 +1,15 @@
-## Information
+# gulp-jquery-closure [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
 
-<table>
-<tr> 
-<td>Package</td><td>gulp-jquery-closure</td>
-</tr>
-<tr>
-<td>Description</td>
-<td>Enclose the content with jQuery definition and more</td>
-</tr>
-<tr>
-<td>Node Version</td>
-<td>>= 0.4</td>
-</tr>
-</table>
+> Enclose the content with jQuery definition and more
 
 ## Usage
+
+First, install `gulp-jquery-closure` as a development dependency:
+
+```shell
+npm install --save-dev gulp-jquery-closure
+```
+
 
 ```javascript
 var concat = require('gulp-concat'),
@@ -118,3 +113,12 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[npm-url]: https://npmjs.org/package/gulp-jquery-closure
+[npm-image]: https://badge.fury.io/js/gulp-jquery-closure.png
+
+[travis-url]: http://travis-ci.org/jbdemonte/gulp-jquery-closure
+[travis-image]: https://secure.travis-ci.org/jbdemonte/gulp-jquery-closure.png?branch=master
+
+[depstat-url]: https://david-dm.org/jbdemonte/gulp-jquery-closure
+[depstat-image]: https://david-dm.org/jbdemonte/gulp-jquery-closure.png
