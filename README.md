@@ -10,6 +10,7 @@ First, install `gulp-jquery-closure` as a development dependency:
 npm install --save-dev gulp-jquery-closure
 ```
 
+Then, use it:
 
 ```javascript
 var concat = require('gulp-concat'),
