@@ -36,7 +36,7 @@ module.exports = function (options) {
 
     for (var i in options) {
       if (options.hasOwnProperty(i)) {
-        if (options[i] && i !== 'newLine') {
+        if (options[i] && i !== 'newLine' && i !== '$') {
           params.push(typeof options[i] === "string" ? options[i] : i);
           if (i !== 'undefined') {
             call.push(i);
