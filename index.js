@@ -33,17 +33,18 @@ module.exports = function (options) {
       params.push(typeof options.$ === "string" ? options.$ : "$");
       call.push("jQuery");
     }
-    if (options.window) {
-      params.push(typeof options.window === "string" ? options.window : "window");
-      call.push("window");
+
+    for (var i in options) {
+      if (options.hasOwnProperty(i)) {
+        if (options[i] && i !== 'newLine') {
+          params.push(typeof options[i] === "string" ? options[i] : i);
+          if (i !== 'undefined') {
+            call.push(i);
+          } 
+        }
+      }
     }
-    if (options.document) {
-      params.push(typeof options.document === "string" ? options.document : "document");
-      call.push("document");
-    }
-    if (options.undefined) {
-      params.push(typeof options.undefined === "string" ? options.undefined : "undefined");
-    }
+
     newFile = new File({
       cwd: file.cwd,
       base: file.base,
